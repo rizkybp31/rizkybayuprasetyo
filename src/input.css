@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-line {
+  @apply w-[25px] h-[2px] block my-[7px];
+}
+
+.navbar {
+  @apply fixed bg-transparent bg-opacity-75;
+  box-shadow: 0 1px 10px 0 #272727;
+}
+
+.menu-active > span:nth-child(1) {
+  @apply rotate-45;
+}
+
+.menu-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.menu-active > span:nth-child(3) {
+  @apply -rotate-45;
+}
